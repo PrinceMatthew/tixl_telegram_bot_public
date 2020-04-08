@@ -1,0 +1,4 @@
+redis==3.4.1
+emoji==0.5.4
+requests==2.18.4
+python_telegram_bot==12.5
