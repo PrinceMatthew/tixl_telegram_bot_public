@@ -9,8 +9,13 @@ import emoji
 logging.basicConfig(format='%(levelname)s - %(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 updater = None
+r = redis.from_url(os.get.environ("REDIS_URL"))
+#or r = redis.from_url("YOUR_REDIS_DB_URL")
 
 def start(update, context):
+    user_id = update.message.from_user.id
+    user_name = update.message.from_user.name   
+    r.set(user_name, user_id) #sets key name as user_name and value as user_id
     __location__ = os.path.realpath(os.path.join(
         os.getcwd(), os.path.dirname(__file__)))
     f = open(os.path.join(__location__, 'tixl_bot_welcome.txt'))
