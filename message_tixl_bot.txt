@@ -1,8 +1,2 @@
-🎉V1.1🎉:
-1. /report_bugs command 
-2. some emojis added (more to come :) )
-3. volume now showing when /price command is sent
-4. prices are approximated to be read easily
-All the best,
-@PrinceMatthew
+🎉V1.2🎉:
 
