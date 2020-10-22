@@ -9,7 +9,7 @@ import emoji
 logging.basicConfig(format='%(levelname)s - %(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 updater = None
-r = redis.from_url(os.get.environ("REDIS_URL"))
+r = redis.from_url(os.environ.get("REDIS_URL"))
 #or r = redis.from_url("YOUR_REDIS_DB_URL")
 
 def start(update, context):
